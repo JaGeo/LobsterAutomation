@@ -10,7 +10,7 @@ for directory in [
     analyse = Analysis(path_to_poscar=os.path.join(directory, "POSCAR.gz"),
                        path_to_icohplist=os.path.join(directory, "ICOHPLIST.lobster.gz"),
                        path_to_cohpcar=os.path.join(directory, "COHPCAR.lobster.gz"),
-                       path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"), summed_spins=False)
+                       path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"), summed_spins=False, whichbonds="no cation-anion")
 
     # Setup Desciption dict
     describe = Description(analysis_object=analyse)
