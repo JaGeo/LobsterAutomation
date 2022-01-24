@@ -11,7 +11,8 @@ for directory in [
                        path_to_icohplist=os.path.join(directory, "ICOHPLIST.lobster.gz"),
                        path_to_cohpcar=os.path.join(directory, "COHPCAR.lobster.gz"),
                        path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"),
-                       path_to_madelung=os.path.join(directory, "MadelungEnergies.lobster.gz")
+                       path_to_madelung=os.path.join(directory, "MadelungEnergies.lobster.gz"),
+                       whichbonds="all"
                        )
 
     # Setup Desciption dict
@@ -19,9 +20,9 @@ for directory in [
     describe.write_description()
 
     # Automatic plots
-    describe.plot_cohps(ylim=[-4, 2], xlim=[-4, 4])
+    describe.plot_cohps(ylim=[-4, 2], xlim=[-4, 4], integrated=False)
 
     # different dicts that summarize the results
     print(analyse.condensed_bonding_analysis)
     print(analyse.final_dict_bonds)
-    print(analyse.final_dict_cations)
+    print(analyse.final_dict_ions)

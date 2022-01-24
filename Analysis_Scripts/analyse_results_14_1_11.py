@@ -20,6 +20,7 @@ for directory in [
     describe.plot_cohps(ylim=[-4, 2], xlim=[-10, 10], integrated=False)
 
     # different dicts that summarize the results
+
     print(analyse.condensed_bonding_analysis)
     print(analyse.final_dict_bonds)
-    print(analyse.final_dict_cations)
+    print(analyse.final_dict_ions)

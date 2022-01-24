@@ -40,7 +40,7 @@ for directory in directories:
     print(analyse.condensed_bonding_analysis)
     print(analyse.final_dict_bonds)
 
-    print(analyse.final_dict_cations)
+    print(analyse.final_dict_ions)
 
     vasprun_here = Vasprun(filename=os.path.join(directory, "vasprun.xml.gz"))
     structure = vasprun_here.final_structure
@@ -49,7 +49,8 @@ for directory in directories:
 
     total_energies.append(final_energy)
     madelung_energies.append(analyse.condensed_bonding_analysis["madelung_energy"] / formula_units)
-    icohps_sum.append(analyse.final_dict_bonds["Ga-N"]["ICOHP_sum"] / len(analyse.final_dict_cations['Ga']))
+    number_of_bonds=[key.split(":")[1] for key in analyse.final_dict_ions["Ga"].keys()][0]
+    icohps_sum.append(analyse.final_dict_bonds["Ga-N"]["ICOHP_mean"]*int(number_of_bonds))
     icohps_mean.append(analyse.final_dict_bonds["Ga-N"]["ICOHP_mean"])
 
 # make a pandas dataframe
