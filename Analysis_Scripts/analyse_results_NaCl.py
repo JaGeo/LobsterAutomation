@@ -12,7 +12,7 @@ for directory in [
                        path_to_cohpcar=os.path.join(directory, "COHPCAR.lobster.gz"),
                        path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"),
                        path_to_madelung=os.path.join(directory, "MadelungEnergies.lobster.gz"),
-                       whichbonds="all"
+                       whichbonds="cation-anion"
                        )
 
     # Setup Desciption dict

@@ -8,6 +8,7 @@ from pymatgen.io.lobster import Lobsterout
 from pymatgen.io.vasp.outputs import Vasprun
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 
+
 correlation_dict = {}
 
 directories = ["/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
@@ -67,14 +68,10 @@ for dir in directories:
         for bond in analyse.final_dict_bonds.keys():
             if not bond in ICOHP:
                 ICOHP[bond] = [analyse.final_dict_bonds[bond]["ICOHP_mean"]]
-                ICOHP_sum[bond] = [
-                    analyse.final_dict_bonds[bond]["ICOHP_sum"] / len(analyse.final_dict_ions[bond.split('-')[1]])]
                 antibdg_dict[bond] = [analyse.final_dict_bonds[bond]["has_antbdg"]]
                 CE_dict[bond] = [analyse.final_dict_ions[bond.split("-")[1]]]
             else:
                 ICOHP[bond].append(analyse.final_dict_bonds[bond]["ICOHP_mean"])
-                ICOHP_sum[bond].append(
-                    analyse.final_dict_bonds[bond]["ICOHP_sum"] / len(analyse.final_dict_ions[bond.split('-')[1]]))
                 antibdg_dict[bond].append(analyse.final_dict_bonds[bond]["has_antbdg"])
                 CE_dict[bond].append(analyse.final_dict_ions[bond.split("-")[1]])
         total_energy.append(energy)

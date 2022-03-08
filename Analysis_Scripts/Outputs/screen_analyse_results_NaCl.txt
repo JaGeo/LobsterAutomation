@@ -1,0 +1,30 @@
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound NaCl has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Na1.
+Na1 has an octahedral (CN=6) coordination environment. It has 6 Na-Cl (mean ICOHP: -0.57 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -5.4 eV.
+{'formula': 'NaCl', 'max_considered_bond_length': 5.69443, 'limit_icohp': (-100000, -0.1), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'O:6', 'bonds': {'Cl': {'ICOHP_mean': '-0.57', 'ICOHP_sum': '-3.4', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 6}}, 'ion': 'Na', 'charge': 0.78, 'relevant_bonds': ['21', '23', '24', '27', '28', '30']}}, 'type_charges': 'Mulliken', 'madelung_energy': -5.4}
+{'Cl-Na': {'ICOHP_mean': -0.5666666666666667, 'has_antbdg': True}}
+{'Na': {'O:6': 1}}
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound NaCl has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Na1.
+Na1 has a cubic (CN=8) coordination environment. It has 8 Na-Cl (mean ICOHP: -0.38 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -5.07 eV.
+{'formula': 'NaCl', 'max_considered_bond_length': 5.81113, 'limit_icohp': (-100000, -0.1), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'C:8', 'bonds': {'Cl': {'ICOHP_mean': '-0.38', 'ICOHP_sum': '-3.04', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 8}}, 'ion': 'Na', 'charge': 0.78, 'relevant_bonds': ['26', '27', '30', '31', '38', '39', '42', '43']}}, 'type_charges': 'Mulliken', 'madelung_energy': -5.07}
+{'Cl-Na': {'ICOHP_mean': -0.38, 'has_antbdg': True}}
+{'Na': {'C:8': 1}}

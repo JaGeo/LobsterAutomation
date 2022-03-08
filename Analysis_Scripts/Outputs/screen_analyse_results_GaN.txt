@@ -1,0 +1,70 @@
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound GaN has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ga1.
+Ga1 has a tetrahedral (CN=4) coordination environment. It has 4 Ga-N (mean ICOHP: -5.03 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -23.22 eV.
+Dicts including informations on bonds
+{'formula': 'GaN', 'max_considered_bond_length': 5.91493, 'limit_icohp': (-100000, -0.504611), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'T:4', 'bonds': {'N': {'ICOHP_mean': '-5.03', 'ICOHP_sum': '-20.12', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 4}}, 'ion': 'Ga', 'charge': 0.98, 'relevant_bonds': ['45', '69', '70', '73']}}, 'type_charges': 'Mulliken', 'madelung_energy': -23.22}
+{'Ga-N': {'ICOHP_mean': -5.03, 'has_antbdg': True}}
+{'Ga': {'T:4': 2}}
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound GaN has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ga1.
+Ga1 has a tetrahedral (CN=4) coordination environment. It has 4 Ga-N (mean ICOHP: -5.05 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -10.85 eV.
+Dicts including informations on bonds
+{'formula': 'GaN', 'max_considered_bond_length': 5.90934, 'limit_icohp': (-100000, -0.505538), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'T:4', 'bonds': {'N': {'ICOHP_mean': '-5.05', 'ICOHP_sum': '-20.2', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 4}}, 'ion': 'Ga', 'charge': 0.95, 'relevant_bonds': ['60', '61', '64', '74']}}, 'type_charges': 'Mulliken', 'madelung_energy': -10.85}
+{'Ga-N': {'ICOHP_mean': -5.05, 'has_antbdg': True}}
+{'Ga': {'T:4': 1}}
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound GaN has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ga1.
+Ga1 has a trigonal planar (CN=3) coordination environment. It has 3 Ga-N (mean ICOHP: -6.25 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -30.22 eV.
+Dicts including informations on bonds
+{'formula': 'GaN', 'max_considered_bond_length': 5.90133, 'limit_icohp': (-100000, -0.6285160000000001), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'TL:3', 'bonds': {'N': {'ICOHP_mean': '-6.25', 'ICOHP_sum': '-18.75', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 3}}, 'ion': 'Ga', 'charge': 1.12, 'relevant_bonds': ['41', '42', '45']}}, 'type_charges': 'Mulliken', 'madelung_energy': -30.22}
+{'Ga-N': {'ICOHP_mean': -6.25, 'has_antbdg': True}}
+{'Ga': {'TL:3': 2}}
+
+If you use the ChemEnv tool for your research, please consider citing the following reference(s) :
+==================================================================================================
+David Waroquiers, Xavier Gonze, Gian-Marco Rignanese, Cathrin Welker-Nieuwoudt, Frank Rosowski,
+Michael Goebel, Stephan Schenk, Peter Degelmann, Rute Andre, Robert Glaum, and Geoffroy Hautier,
+"Statistical analysis of coordination environments in oxides",
+Chem. Mater., 2017, 29 (19), pp 8346-8360,
+DOI: 10.1021/acs.chemmater.7b02766
+
+The compound GaN has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ga1.
+Ga1 has an octahedral (CN=6) coordination environment. It has 6 Ga-N (mean ICOHP: -3.2 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -9.16 eV.
+Dicts including informations on bonds
+{'formula': 'GaN', 'max_considered_bond_length': 5.23471, 'limit_icohp': (-100000, -0.320543), 'number_of_considered_ions': 1, 'sites': {0: {'env': 'O:6', 'bonds': {'N': {'ICOHP_mean': '-3.2', 'ICOHP_sum': '-19.23', 'has_antibdg_states_below_Efermi': True, 'number_of_bonds': 6}}, 'ion': 'Ga', 'charge': 0.88, 'relevant_bonds': ['53', '56', '57', '66', '67', '70']}}, 'type_charges': 'Mulliken', 'madelung_energy': -9.16}
+{'Ga-N': {'ICOHP_mean': -3.205, 'has_antbdg': True}}
+{'Ga': {'O:6': 1}}
+Data Frame:
+         Name  Total Energy (eV)  Madelung Energy (eV)  Sum ICOHP (eV)  Mean ICOHP (eV)
+0      mp-804         -12.164570                -11.61          -20.12           -5.030
+1      mp-830         -12.154222                -10.85          -20.20           -5.050
+2  mp-1007824         -11.458802                -15.11          -18.75           -6.250
+3     mp-2853         -11.207368                 -9.16          -19.23           -3.205

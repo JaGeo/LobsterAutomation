@@ -1,0 +1,120 @@
+Ca1Ta1O2N1
+The compound CaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta2.
+Ta2 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.51 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.52 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -53.46 eV.
+The compound CaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -5.25 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -3.29 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -3.7 eV, antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -4.91 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -106.11 eV.
+The compound CaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 4 Ta-N (mean ICOHP: -4.3 eV, antibonding interaction below EFermi), and 2 Ta-O (mean ICOHP: -3.96 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 6 Ta-O (mean ICOHP: -4.71 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -111.67 eV.
+The compound CaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.59 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.42 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -107.48 eV.
+The compound CaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.54 eV, no antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -3.92 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -104.24 eV.
+The compound CaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -5.29 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -3.2 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -4.08 eV, no antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -4.86 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -107.07 eV.
+The compound CaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.23 eV, no antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.06 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -104.95 eV.
+      ICOHP  total_energy         env       spa   key  has_antibdg structure_id  madelung
+0  -4.50500    -43.362136  {'O:6': 1}    P4/mmm  N-Ta         True            0   -53.460
+1  -4.86500    -43.562702  {'O:6': 2}      Pmm2  N-Ta         True            1   -53.055
+2  -4.30000    -43.371524  {'O:6': 2}    P4/mmm  N-Ta         True            2   -55.835
+3  -4.59000    -43.386678  {'O:6': 2}  P4_2/mmc  N-Ta         True            3   -53.740
+4  -5.54500    -43.685298  {'O:6': 2}      Pmma  N-Ta        False            4   -52.120
+5  -4.99000    -43.562183  {'O:6': 2}      Amm2  N-Ta         True            5   -53.535
+6  -5.23000    -43.595658  {'O:6': 2}      Imma  N-Ta        False            6   -52.475
+7  -4.51500    -43.362136  {'O:6': 1}    P4/mmm  O-Ta         True            0   -53.460
+8  -4.30125    -43.562702  {'O:6': 2}      Pmm2  O-Ta         True            1   -53.055
+9  -4.52000    -43.371524  {'O:6': 2}    P4/mmm  O-Ta         True            2   -55.835
+10 -4.41750    -43.386678  {'O:6': 2}  P4_2/mmc  O-Ta         True            3   -53.740
+11 -3.92500    -43.685298  {'O:6': 2}      Pmma  O-Ta         True            4   -52.120
+12 -4.24125    -43.562183  {'O:6': 2}      Amm2  O-Ta         True            5   -53.535
+13 -4.06000    -43.595658  {'O:6': 2}      Imma  O-Ta         True            6   -52.475
+Ba1Ta1O2N1
+The compound BaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta2.
+Ta2 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.64 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.24 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -51.42 eV.
+The compound BaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -4.06 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -4.56 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -7.76 eV, antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -3.78 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -100.3 eV.
+The compound BaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 4 Ta-N (mean ICOHP: -4.39 eV, antibonding interaction below EFermi), and 2 Ta-O (mean ICOHP: -3.41 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 6 Ta-O (mean ICOHP: -4.56 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -101.68 eV.
+The compound BaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.6 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.24 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -102.88 eV.
+The compound BaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.61 eV, no antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -3.78 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -101.26 eV.
+The compound BaTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -4.19 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -4.32 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -7.8 eV, no antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -3.84 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -99.52 eV.
+The compound BaTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.52 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -3.83 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -101.76 eV.
+      ICOHP  total_energy         env       spa   key  has_antibdg structure_id  madelung
+0  -4.64000    -43.405251  {'O:6': 1}    P4/mmm  N-Ta         True            0    -51.42
+1  -4.98500    -43.560385  {'O:6': 2}      Pmm2  N-Ta         True            1    -50.15
+2  -4.38500    -43.269946  {'O:6': 2}    P4/mmm  N-Ta         True            2    -50.84
+3  -4.59500    -43.459922  {'O:6': 2}  P4_2/mmc  N-Ta         True            3    -51.44
+4  -5.61000    -43.714740  {'O:6': 2}      Pmma  N-Ta        False            4    -50.63
+5  -5.09250    -43.589652  {'O:6': 2}      Amm2  N-Ta         True            5    -49.76
+6  -5.52000    -43.702928  {'O:6': 2}      Imma  N-Ta         True            6    -50.88
+7  -4.24250    -43.405251  {'O:6': 1}    P4/mmm  O-Ta         True            0    -51.42
+8  -4.07250    -43.560385  {'O:6': 2}      Pmm2  O-Ta         True            1    -50.15
+9  -4.27125    -43.269946  {'O:6': 2}    P4/mmm  O-Ta         True            2    -50.84
+10 -4.23750    -43.459922  {'O:6': 2}  P4_2/mmc  O-Ta         True            3    -51.44
+11 -3.78000    -43.714740  {'O:6': 2}      Pmma  O-Ta         True            4    -50.63
+12 -4.02125    -43.589652  {'O:6': 2}      Amm2  O-Ta         True            5    -49.76
+13 -3.83000    -43.702928  {'O:6': 2}      Imma  O-Ta         True            6    -50.88
+Sr1Ta1O2N1
+The compound SrTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta2.
+Ta2 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.81 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.59 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -52.45 eV.
+The compound SrTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -4.39 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -4.71 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -7.45 eV, no antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -4.1 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -103.56 eV.
+The compound SrTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 4 Ta-N (mean ICOHP: -4.56 eV, antibonding interaction below EFermi), and 2 Ta-O (mean ICOHP: -3.82 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 6 Ta-O (mean ICOHP: -4.79 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -105.09 eV.
+The compound SrTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -4.8 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.5 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -104.83 eV.
+The compound SrTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.75 eV, no antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.05 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -103.26 eV.
+The compound SrTaNO2 has 2 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3, Ta4.
+Ta3 has an octahedral (CN=6) coordination environment. It has 3 Ta-N (mean ICOHP: -5.04 eV, antibonding interaction below EFermi), and 3 Ta-O (mean ICOHP: -3.83 eV, antibonding interaction below EFermi) bonds.
+Ta4 has an octahedral (CN=6) coordination environment. It has 1 Ta-N (mean ICOHP: -6.03 eV, antibonding interaction below EFermi), and 5 Ta-O (mean ICOHP: -4.52 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -103.54 eV.
+The compound SrTaNO2 has 1 symmetry-independent cation(s) with relevant cation-anion interactions: Ta3.
+Ta3 has an octahedral (CN=6) coordination environment. It has 2 Ta-N (mean ICOHP: -5.65 eV, antibonding interaction below EFermi), and 4 Ta-O (mean ICOHP: -4.11 eV, antibonding interaction below EFermi) bonds.
+The Madelung energy of this crystal structure per unit cell is: -103.32 eV.
+      ICOHP  total_energy         env       spa   key  has_antibdg structure_id  madelung
+0  -4.81000    -43.406518  {'O:6': 1}    P4/mmm  N-Ta         True            0   -52.450
+1  -5.15250    -43.550565  {'O:6': 2}      Pmm2  N-Ta         True            1   -51.780
+2  -4.55750    -43.282773  {'O:6': 2}    P4/mmm  N-Ta         True            2   -52.545
+3  -4.80500    -43.448342  {'O:6': 2}  P4_2/mmc  N-Ta         True            3   -52.415
+4  -5.75500    -43.708724  {'O:6': 2}      Pmma  N-Ta        False            4   -51.630
+5  -5.28500    -43.554243  {'O:6': 2}      Amm2  N-Ta         True            5   -51.770
+6  -5.65500    -43.678883  {'O:6': 2}      Imma  N-Ta         True            6   -51.660
+7  -4.59000    -43.406518  {'O:6': 1}    P4/mmm  O-Ta         True            0   -52.450
+8  -4.33125    -43.550565  {'O:6': 2}      Pmm2  O-Ta         True            1   -51.780
+9  -4.54625    -43.282773  {'O:6': 2}    P4/mmm  O-Ta         True            2   -52.545
+10 -4.49750    -43.448342  {'O:6': 2}  P4_2/mmc  O-Ta         True            3   -52.415
+11 -4.05250    -43.708724  {'O:6': 2}      Pmma  O-Ta         True            4   -51.630
+12 -4.26250    -43.554243  {'O:6': 2}      Amm2  O-Ta         True            5   -51.770
+13 -4.10500    -43.678883  {'O:6': 2}      Imma  O-Ta         True            6   -51.660

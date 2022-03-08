@@ -5,15 +5,16 @@ from lobsterpy.cohp.analyze import Analysis
 from lobsterpy.cohp.describe import Description
 from pymatgen.io.vasp import Vasprun
 
+# We will analyze the results with Gaussian Smearing as VASP 6.* does not correctly determine the Fermi level with tetrahedron smearing
 directories = [
-    "../Results/GaN/mp-804/Spin_2/lobster_0",
-    "../Results/GaN/mp-830/Spin_2/lobster_0/",
-    "../Results/GaN/mp-1007824/Spin_2/lobster_0/",
-    "../Results/GaN/mp-2853/Spin_2/lobster_0/",
-
+    "../Results/GaN_Gaussian_Smearing/mp-804/Spin1_ISMEAR_0/lobster_0",
+    "../Results/GaN_Gaussian_Smearing/mp-830/Spin1_ISMEAR_0/lobster_0",
+    "../Results/GaN_Gaussian_Smearing/mp-1007824/Spin1_ISMEAR_0/lobster_0",
+    "../Results/GaN_Gaussian_Smearing/mp-2853/Spin1_ISMEAR_0/lobster_0",
 ]
 
 names = ["mp-804", "mp-830", "mp-1007824", "mp-2853"]
+
 icohps_sum = []
 icohps_mean = []
 total_energies = []
@@ -33,7 +34,8 @@ for directory in directories:
     describe.write_description()
 
     # Automatic plots
-    describe.plot_cohps(ylim=[-10, 2], xlim=[-5, 5])
+    describe.plot_cohps(ylim=[-20, 2], xlim=[-10, 30])
+
 
     # different dicts that summarize the results
     print("Dicts including informations on bonds")
