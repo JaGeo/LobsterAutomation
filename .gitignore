@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# database connetion
+Get_Results_From_Database
+Results
+Results_
