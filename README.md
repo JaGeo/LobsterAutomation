@@ -21,13 +21,14 @@ You can then use the "Analysis_Scripts" to reproduce our publication.
 In "Analysis_Scripts/Outputs", you can find the outputs.
 
 
+To produce the data, you can use the scripts in "Start_Scripts". 
+
+- "start_workflows_bulk.py" will start all computations except for the oxynitride computations
+- "start_defect_structures.py" will start the oxynitride computations
+
+
 The following version numbers are needed for the Python packages:
 - pymatgen 2022.2.1
 - atomate 1.0.3
 - LobsterPy 0.1.0
 
-
-To produce the data, you can use the scripts in "Start_Scripts". 
-
-- "start_workflows_bulk.py" will start all computations except for the oxynitride computations
-- "start_defect_structures.py" will start the oxynitride computations
