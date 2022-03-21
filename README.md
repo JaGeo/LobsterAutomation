@@ -5,7 +5,8 @@ This is a package to automate the Lobster publication.
 pymatgen, fireworks, and atomate.
 
 You need to download the data from our second zenodo.org repository first.
-You can do this here: [zenodo.org repo]
+You can get the data here: [https://doi.org/10.5281/zenodo.6373369](https://doi.org/10.5281/zenodo.6373369)
+Please unzip the data and put it in the folder "LobsterAutomation".
 
 You can then use the "Analysis_Scripts" to reproduce our publication.
 
@@ -19,11 +20,10 @@ You can then use the "Analysis_Scripts" to reproduce our publication.
 In "Analysis_Scripts/Outputs", you can find the outputs.
 
 
-
 The following version numbers are needed for the Python packages:
-pymatgen 2022.2.1
-atomate 1.0.3
-LobsterPy 0.1.0
+- pymatgen 2022.2.1
+- atomate 1.0.3
+- LobsterPy 0.1.0
 
 
 
