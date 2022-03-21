@@ -1,5 +1,5 @@
 # LobsterAutomation
-This is a package to automate the Lobster publication ([ChemRxiv](https://doi.org/10.26434/chemrxiv-2022-2v424)). 
+This is a package to reproduce the publication on Lobster automation ([ChemRxiv](https://doi.org/10.26434/chemrxiv-2022-2v424)). 
 
 "Start_Scripts" includes two scripts to start all Lobster computations with
 pymatgen, fireworks, and atomate.
