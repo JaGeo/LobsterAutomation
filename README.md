@@ -30,5 +30,4 @@ To produce the data, you can use the scripts in "Start_Scripts".
 The following version numbers are needed for the Python packages:
 - pymatgen 2022.2.1
 - atomate 1.0.3
-- LobsterPy 0.1.0
-
+- [LobsterPy 0.1.0](https://github.com/JaGeo/LobsterPy)
