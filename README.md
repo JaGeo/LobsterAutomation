@@ -6,6 +6,7 @@ pymatgen, fireworks, and atomate.
 
 You need to download the data from our second zenodo.org repository first.
 You can get the data here: [https://doi.org/10.5281/zenodo.6373369](https://doi.org/10.5281/zenodo.6373369)
+
 Please unzip the data and put it in the folder "LobsterAutomation".
 
 You can then use the "Analysis_Scripts" to reproduce our publication.
