@@ -27,4 +27,7 @@ The following version numbers are needed for the Python packages:
 - LobsterPy 0.1.0
 
 
+To produce the data, you can use the scripts in "Start_Scripts". 
 
+- "start_workflows_bulk.py" will start all computations except for the oxynitride computations
+- "start_defect_structures.py" will start the oxynitride computations
