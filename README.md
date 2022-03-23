@@ -31,3 +31,4 @@ The following version numbers are needed for the Python packages:
 - pymatgen 2022.2.1
 - atomate 1.0.3
 - [LobsterPy 0.1.0](https://github.com/JaGeo/LobsterPy)
+- [enumlib 2.0.4](https://github.com/msg-byu/enumlib)
