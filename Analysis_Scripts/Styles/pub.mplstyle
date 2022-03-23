@@ -5,11 +5,17 @@ lines.linewidth : 1
 
 font.size : 7
 axes.labelsize: medium
+axes.labelpad : 1.5
 axes.titlesize : large
 legend.fontsize : medium
 
+axes.linewidth : 1
+grid.linewidth : 0.6
 xtick.direction : in
 ytick.direction : in
+xtick.major.width : 1
+ytick.major.width : 1
+
 
 # In LobsterPy, axis lines through origin use grid settings.
 # This should avoid clutter when grid is also enabled
@@ -21,11 +27,12 @@ axes.prop_cycle: cycler('color', ['e41a1c', '377eb8', '4daf4a', '984ea3', 'ff7f0
 ### autolayout is equivalent to .tight_layout()
 ### - a good default but sometimes we want to get
 ### in there with subplot spacing to use all space
-# figure.autolayout : True
-figure.subplot.right : 0.96
-figure.subplot.bottom : 0.2
+figure.autolayout : False
+figure.subplot.left : 0.16
+figure.subplot.right : 0.97
+figure.subplot.bottom : 0.18
 figure.subplot.top : 0.99
-figure.subplot.left 0.2
+
 
 legend.loc : upper right
 legend.frameon : False
