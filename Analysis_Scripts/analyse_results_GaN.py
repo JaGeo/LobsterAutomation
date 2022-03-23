@@ -1,18 +1,25 @@
+import argparse
 import os
+import matplotlib.pyplot as plt
+from pathlib import Path
 
 import pandas as pd
 from lobsterpy.cohp.analyze import Analysis
 from lobsterpy.cohp.describe import Description
 from pymatgen.io.vasp import Vasprun
 
-# We will analyze the results with Gaussian Smearing as VASP 6.* does not correctly determine the Fermi level with tetrahedron smearing
-directories = [
-    "../Results/GaN_Gaussian_Smearing/mp-804/Spin1_ISMEAR_0/lobster_0",
-    "../Results/GaN_Gaussian_Smearing/mp-830/Spin1_ISMEAR_0/lobster_0",
-    "../Results/GaN_Gaussian_Smearing/mp-1007824/Spin1_ISMEAR_0/lobster_0",
-    "../Results/GaN_Gaussian_Smearing/mp-2853/Spin1_ISMEAR_0/lobster_0",
-]
+outputs = Path(__file__).parent / 'Outputs'
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--style', type=str, default=None, nargs='+',
+                    help="Matplotlib style for plotting")
+parser.add_argument('--save', type=Path,
+                    nargs='?', const=outputs, default=None,
+                    help=("Save plots to files. If no path provided, "
+                          "will save to ./Outputs"))
+args = parser.parse_args()
+
+# We will analyze the results with Gaussian Smearing as VASP 6.* does not correctly determine the Fermi level with tetrahedron smearing
 names = ["mp-804", "mp-830", "mp-1007824", "mp-2853"]
 
 icohps_sum = []
@@ -21,7 +28,8 @@ total_energies = []
 madelung_energies = []
 charge_Ga = []
 
-for directory in directories:
+for name in names:
+    directory = Path(__file__).parent.parent / f'Results/GaN_Gaussian_Smearing/{name}/Spin1_ISMEAR_0/lobster_0'
     # Setup analysis dict
     analyse = Analysis(path_to_poscar=os.path.join(directory, "POSCAR.gz"),
                        path_to_icohplist=os.path.join(directory, "ICOHPLIST.lobster.gz"),
@@ -34,8 +42,12 @@ for directory in directories:
     describe.write_description()
 
     # Automatic plots
-    describe.plot_cohps(ylim=[-20, 2], xlim=[-10, 30])
+    if args.style:
+        plt.style.use(args.style)
 
+    describe.plot_cohps(ylim=[-20, 2], xlim=[-10, 30],
+                        save=(True if args.save else False),
+                        filename=args.save / f'GaN-{name}.png')
 
     # different dicts that summarize the results
     print("Dicts including informations on bonds")

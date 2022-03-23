@@ -1,0 +1,35 @@
+figure.figsize : 2.5, 1.5
+figure.dpi : 400
+
+lines.linewidth : 1
+
+font.size : 7
+axes.labelsize: medium
+axes.titlesize : large
+legend.fontsize : medium
+
+xtick.direction : in
+ytick.direction : in
+
+# In LobsterPy, axis lines through origin use grid settings.
+# This should avoid clutter when grid is also enabled
+grid.color : k
+
+# palettable.colorbrewer.qualitative.Set1_9
+axes.prop_cycle: cycler('color', ['e41a1c', '377eb8', '4daf4a', '984ea3', 'ff7f00', 'ffff33', 'a65628', 'f781bf', '999999'])
+
+### autolayout is equivalent to .tight_layout()
+### - a good default but sometimes we want to get
+### in there with subplot spacing to use all space
+# figure.autolayout : True
+figure.subplot.right : 0.96
+figure.subplot.bottom : 0.2
+figure.subplot.top : 0.99
+figure.subplot.left 0.2
+
+legend.loc : upper right
+legend.frameon : False
+legend.borderpad : 1.2
+
+# Embed text, easier to edit with vector graphics software
+pdf.fonttype : 42
