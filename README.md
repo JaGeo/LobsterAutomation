@@ -1,4 +1,4 @@
-# LobsterAutomation
+﻿# LobsterAutomation
 This is a package to reproduce the publication on Lobster automation ([ChemRxiv](https://doi.org/10.26434/chemrxiv-2022-2v424)). 
 
 "Start_Scripts" includes two scripts to start all Lobster computations with
@@ -35,3 +35,8 @@ The following version numbers are needed for the workflows:
 
 To analyze the results, you would need the latest version of:
 - [LobsterPy](https://github.com/JaGeo/LobsterPy)
+
+
+#TODO
+- save a new LobsterPy version to link to this repo
+- add Gaussian broadening to LobsterPy and redo plots
