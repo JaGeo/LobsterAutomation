@@ -27,8 +27,11 @@ To produce the data, you can use the scripts in "Start_Scripts".
 - "start_defect_structures.py" will start the oxynitride computations
 
 
-The following version numbers are needed for the Python packages:
+The following version numbers are needed for the workflows:
 - pymatgen 2022.2.1
 - atomate 1.0.3
-- [LobsterPy 0.1.0](https://github.com/JaGeo/LobsterPy)
 - [enumlib 2.0.4](https://github.com/msg-byu/enumlib)
+
+
+To analyze the results, you would need the latest version of:
+- [LobsterPy](https://github.com/JaGeo/LobsterPy)

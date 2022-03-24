@@ -12,7 +12,11 @@ outputs = Path(__file__).parent / "Outputs"
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--style", type=str, default=None, nargs="+", help="Matplotlib style for plotting"
+    "--style",
+    type=str,
+    default=Path(__file__).parent / "Styles" / "pub.mplstyle",
+    nargs="+",
+    help="Matplotlib style for plotting",
 )
 parser.add_argument(
     "--save",
