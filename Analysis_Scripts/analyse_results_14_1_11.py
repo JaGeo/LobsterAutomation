@@ -18,6 +18,12 @@ parser.add_argument(
     help="Matplotlib style for plotting",
 )
 parser.add_argument(
+    "--sigma",
+    type=float,
+    default=0.1,
+    help="sigma for gaussian broadening",
+)
+parser.add_argument(
     "--save",
     type=Path,
     nargs="?",
@@ -55,6 +61,7 @@ for spin in ["Spin_2", "Spin_mixed"]:
         integrated=False,
         save=(True if args.save else False),
         filename=(args.save / f"14-1-11-{spin}.pdf") if args.save else None,
+        sigma=args.sigma
     )
 
     # different dicts that summarize the results

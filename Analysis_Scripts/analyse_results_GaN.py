@@ -19,6 +19,12 @@ parser.add_argument(
     help="Matplotlib style for plotting",
 )
 parser.add_argument(
+    "--sigma",
+    type=float,
+    default=0.15,
+    help="sigma for gaussian broadening",
+)
+parser.add_argument(
     "--save",
     type=Path,
     nargs="?",
@@ -64,6 +70,7 @@ for name in names:
         xlim=[-10, 30],
         save=(True if args.save else False),
         filename=(args.save / f"GaN-{name}.pdf") if args.save else None,
+        sigma = args.sigma
     )
 
     # different dicts that summarize the results
