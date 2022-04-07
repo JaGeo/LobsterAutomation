@@ -11,9 +11,11 @@ from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 
 correlation_dict = {}
 
-directories = ["/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
-               "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ba1Ta1O2N1",
-               "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Sr1Ta1O2N1"]
+directories = [
+    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
+    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ba1Ta1O2N1",
+    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Sr1Ta1O2N1",
+]
 
 for dir in directories:
     print(str(dir.split("/")[-1]))
@@ -48,7 +50,10 @@ for dir in directories:
 
         symm_struct = sga.get_symmetrized_structure()
         vasprun = Vasprun(filename=os.path.join(dir, dir2, lobdir, "vasprun.xml.gz"))
-        formula_units = structure.composition.num_atoms / structure.composition.reduced_composition.num_atoms
+        formula_units = (
+            structure.composition.num_atoms
+            / structure.composition.reduced_composition.num_atoms
+        )
         energy = vasprun.final_energy / formula_units
 
         import contextlib
@@ -56,11 +61,19 @@ for dir in directories:
         # this cleans up the screen output. Otherwise, there will be too many references visible
         with contextlib.redirect_stdout(None):
             with contextlib.redirect_stderr(None):
-                analyse = Analysis(path_to_poscar=os.path.join(dir, dir2, lobdir, "POSCAR.gz"),
-                                   path_to_icohplist=os.path.join(dir, dir2, lobdir, "ICOHPLIST.lobster.gz"),
-                                   path_to_cohpcar=os.path.join(dir, dir2, lobdir, "COHPCAR.lobster.gz"),
-                                   path_to_charge=os.path.join(dir, dir2, lobdir, "CHARGE.lobster.gz"),
-                                   path_to_madelung=os.path.join(dir, dir2, lobdir, "MadelungEnergies.lobster.gz"))
+                analyse = Analysis(
+                    path_to_poscar=os.path.join(dir, dir2, lobdir, "POSCAR.gz"),
+                    path_to_icohplist=os.path.join(
+                        dir, dir2, lobdir, "ICOHPLIST.lobster.gz"
+                    ),
+                    path_to_cohpcar=os.path.join(
+                        dir, dir2, lobdir, "COHPCAR.lobster.gz"
+                    ),
+                    path_to_charge=os.path.join(dir, dir2, lobdir, "CHARGE.lobster.gz"),
+                    path_to_madelung=os.path.join(
+                        dir, dir2, lobdir, "MadelungEnergies.lobster.gz"
+                    ),
+                )
 
                 describe = Description(analysis_object=analyse)
         describe.write_description()
@@ -75,7 +88,9 @@ for dir in directories:
                 antibdg_dict[bond].append(analyse.final_dict_bonds[bond]["has_antbdg"])
                 CE_dict[bond].append(analyse.final_dict_ions[bond.split("-")[1]])
         total_energy.append(energy)
-        madelung_list.append(analyse.condensed_bonding_analysis["madelung_energy"] / formula_units)
+        madelung_list.append(
+            analyse.condensed_bonding_analysis["madelung_energy"] / formula_units
+        )
 
         structure_list.append(dir2)
         spa_list.append(sga.get_space_group_symbol())
@@ -99,9 +114,16 @@ for dir in directories:
             all_antibdg.extend(antibdg_dict[key])
             all_structure_list.extend(structure_list)
 
-        data = {"ICOHP": all_ICOHPs, "total_energy": all_totale_energy, "env": all_CE_list, "spa": all_spa_list,
-                "key": all_keys, "has_antibdg": all_antibdg, "structure_id": all_structure_list,
-                "madelung": all_madelung_list}
+        data = {
+            "ICOHP": all_ICOHPs,
+            "total_energy": all_totale_energy,
+            "env": all_CE_list,
+            "spa": all_spa_list,
+            "key": all_keys,
+            "has_antibdg": all_antibdg,
+            "structure_id": all_structure_list,
+            "madelung": all_madelung_list,
+        }
 
         df = pd.DataFrame(data)
 
@@ -111,15 +133,15 @@ for dir in directories:
     import matplotlib as mpl
 
     mpl.rcParams["savefig.directory"] = os.chdir(os.getcwd())
-    mpl.rcParams["savefig.format"] = 'pdf'
-    mpl.rcParams['pdf.fonttype'] = 42
-    mpl.rcParams['ps.fonttype'] = 42
+    mpl.rcParams["savefig.format"] = "pdf"
+    mpl.rcParams["pdf.fonttype"] = 42
+    mpl.rcParams["ps.fonttype"] = 42
 
     import matplotlib.pyplot as plt
     import matplotlib.style as style
     import scipy
 
-    style.use('ggplot')
+    style.use("ggplot")
 
     fix, ax = plt.subplots()
 
@@ -131,9 +153,16 @@ for dir in directories:
                 color = "xkcd:lightish red"
 
             ax.scatter(d["total_energy"], d["ICOHP"], label=k, color=color)
-            slope, intercept, r, p, stderr = scipy.stats.linregress(d["total_energy"], d["ICOHP"])
+            slope, intercept, r, p, stderr = scipy.stats.linregress(
+                d["total_energy"], d["ICOHP"]
+            )
             line = "Pearson correlation coefficient: " + str(r)
-            ax.plot(d["total_energy"], intercept + slope * d["total_energy"], label=line, color=color)
+            ax.plot(
+                d["total_energy"],
+                intercept + slope * d["total_energy"],
+                label=line,
+                color=color,
+            )
 
     plt.xlabel("Total energy (eV)")
     plt.ylabel("ICOHP (eV)")

@@ -5,15 +5,17 @@ from lobsterpy.cohp.describe import Description
 
 for directory in [
     "../Results/NaCl/mp-22862/Spin_1/lobster_0",
-    "../Results/NaCl/mp-22851/Spin_1/lobster_0"]:
+    "../Results/NaCl/mp-22851/Spin_1/lobster_0",
+]:
     # Setup analysis dict
-    analyse = Analysis(path_to_poscar=os.path.join(directory, "POSCAR.gz"),
-                       path_to_icohplist=os.path.join(directory, "ICOHPLIST.lobster.gz"),
-                       path_to_cohpcar=os.path.join(directory, "COHPCAR.lobster.gz"),
-                       path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"),
-                       path_to_madelung=os.path.join(directory, "MadelungEnergies.lobster.gz"),
-                       whichbonds="cation-anion"
-                       )
+    analyse = Analysis(
+        path_to_poscar=os.path.join(directory, "POSCAR.gz"),
+        path_to_icohplist=os.path.join(directory, "ICOHPLIST.lobster.gz"),
+        path_to_cohpcar=os.path.join(directory, "COHPCAR.lobster.gz"),
+        path_to_charge=os.path.join(directory, "CHARGE.lobster.gz"),
+        path_to_madelung=os.path.join(directory, "MadelungEnergies.lobster.gz"),
+        whichbonds="cation-anion",
+    )
 
     # Setup Desciption dict
     describe = Description(analysis_object=analyse)

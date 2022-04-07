@@ -70,7 +70,7 @@ for name in names:
         xlim=[-10, 30],
         save=(True if args.save else False),
         filename=(args.save / f"GaN-{name}.pdf") if args.save else None,
-        sigma = args.sigma
+        sigma=args.sigma,
     )
 
     # different dicts that summarize the results

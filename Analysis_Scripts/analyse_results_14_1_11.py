@@ -61,7 +61,7 @@ for spin in ["Spin_2", "Spin_mixed"]:
         integrated=False,
         save=(True if args.save else False),
         filename=(args.save / f"14-1-11-{spin}.pdf") if args.save else None,
-        sigma=args.sigma
+        sigma=args.sigma,
     )
 
     # different dicts that summarize the results
