@@ -36,7 +36,7 @@ args = parser.parse_args()
 # First folder contains spin-polarized computation, second one the one without.
 for spin in ["Spin_2", "Spin_mixed"]:
     directory = (
-        Path(__file__).parent.parent / f"Results/Yb14MnSb11/mp-568088/{spin}/lobster_1"
+        Path(__file__).parent.parent / f"Results/Yb14MnSb11/mp-568088/{spin}/lobster_0"
     )
 
     # Setup analysis dict
@@ -60,7 +60,7 @@ for spin in ["Spin_2", "Spin_mixed"]:
         xlim=[-10, 10],
         integrated=False,
         save=(True if args.save else False),
-        filename=(args.save / f"14-1-11-{spin}.pdf") if args.save else None,
+        filename=(args.save / f"14-1-11-{spin}_small_basis.pdf") if args.save else None,
         sigma=args.sigma,
     )
 

@@ -1,16 +1,18 @@
 import os
 
+import numpy as np
 import pandas as pd
-from lobsterpy.cohp.analyze import Analysis
-from lobsterpy.cohp.describe import Description
 from pymatgen.core.structure import Structure
 from pymatgen.io.lobster import Lobsterout
 from pymatgen.io.vasp.outputs import Vasprun
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 
+from lobsterpy.cohp.analyze import Analysis
+from lobsterpy.cohp.describe import Description
 
 correlation_dict = {}
-
+ordered_lists_ICOHP = {"Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []}, "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
+                       "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []}}
 directories = [
     "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
     "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ba1Ta1O2N1",
@@ -51,8 +53,8 @@ for dir in directories:
         symm_struct = sga.get_symmetrized_structure()
         vasprun = Vasprun(filename=os.path.join(dir, dir2, lobdir, "vasprun.xml.gz"))
         formula_units = (
-            structure.composition.num_atoms
-            / structure.composition.reduced_composition.num_atoms
+                structure.composition.num_atoms
+                / structure.composition.reduced_composition.num_atoms
         )
         energy = vasprun.final_energy / formula_units
 
@@ -144,11 +146,11 @@ for dir in directories:
     style.use("ggplot")
 
     fix, ax = plt.subplots()
-
     for k, d in df.groupby("key"):
         if "Ta" in k:
             if "N" in k:
                 color = "xkcd:lightish blue"
+
             elif "O" in k:
                 color = "xkcd:lightish red"
 
@@ -169,3 +171,51 @@ for dir in directories:
     plt.legend(loc=2)
     plt.title(str(dir.split("/")[-1]))
     plt.show()
+
+    # TODO: plot plot with ICOHP Ta-N vs. ICOHP Ta-O
+
+    df_NTa = df[df["key"] == "N-Ta"]
+    df_OTa = df[df["key"] == "O-Ta"]
+
+    ICOHP_NTa = []
+    ICOHP_OTa = []
+    for k, d in df_NTa.groupby("total_energy"):
+        for k1, d2 in df_OTa.groupby("total_energy"):
+            if k == k1:
+                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-N"].append(float(d["ICOHP"]))
+                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-O"].append(float(d2["ICOHP"]))
+
+import matplotlib as mpl
+
+mpl.rcParams["savefig.directory"] = os.chdir(os.getcwd())
+mpl.rcParams["savefig.format"] = "pdf"
+mpl.rcParams["pdf.fonttype"] = 42
+mpl.rcParams["ps.fonttype"] = 42
+
+import matplotlib.pyplot as plt
+import matplotlib.style as style
+
+style.use("ggplot")
+fix, ax = plt.subplots()
+for key, values in ordered_lists_ICOHP.items():
+    if "Ba" in key:
+        color = "xkcd:lightish blue"
+    elif "Sr" in key:
+        color = "xkcd:lightish red"
+    elif "Ca" in key:
+        color = "black"
+    ax.scatter(values["Ta-N"], values["Ta-O"], label=key, color=color)
+    slope, intercept, r, p, stderr = scipy.stats.linregress(
+        np.array(values["Ta-N"]), np.array(values["Ta-O"])
+    )
+    line = "Pearson correlation coefficient: " + str(r) + " (" + str(key) + ")"
+    ax.plot(
+        np.array(values["Ta-N"]),
+        intercept + slope * np.array(values["Ta-N"]),
+        label=line, color=color
+    )
+
+plt.xlabel("ICOHP N-Ta (eV)")
+plt.ylabel("ICOHP O-Ta (eV)")
+plt.legend(loc=2)
+plt.show()

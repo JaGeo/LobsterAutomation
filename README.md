@@ -7,13 +7,20 @@ pymatgen, fireworks, and atomate.
 You need to download the data from our second zenodo.org repository first.
 You can get the data here: [https://doi.org/10.5281/zenodo.6373369](https://doi.org/10.5281/zenodo.6373369)
 
+""wget https://zenodo.org/record/6373369/files/Results.zip?download=1""
+
 Please unzip the data and put it in the folder "LobsterAutomation".
 
 You can then use the "Analysis_Scripts" to reproduce our publication.
 
-- analyse_results_14_1_11.py will produce the automatic analysis for Yb14Mn1Sb11. 
-- analyse_results_14_1_11_anion_anion.py will produce the automatic analysis including all bonds for Yb14Mn1Sb11
+- analyse_results_14_1_11_without_Yb5d.py will produce the automatic analysis for Yb14Mn1Sb11 with a basis set that does not include 5d (as in the manuscript). 
+- analyse_results_14_1_11__without_Yb5d_anion_anion.py will produce the automatic analysis including all bonds for Yb14Mn1Sb11 with a basis set that does include 5d (part of the SI)
+- analyse_results_14_1_11_without_Yb5d.py will produce the automatic analysis for Yb14Mn1Sb11 with a basis set that does not include 5d (as in the manuscript). 
+- analyse_results_14_1_11__without_Yb5d_anion_anion.py will produce the automatic analysis including all bonds for Yb14Mn1Sb11 with a basis set that does include 5d (part of the SI)
 - analyse_14_1_11_chemenv.py will produce the geometric analysis of coordination environments with ChemEnv
+- analyze_reslts_14_1_11_DOS_Mn.py will compare the DOS for Mn with the two different basis sets
+- analyze_reslts_14_1_11_DOS_Sb.py will compare the DOS for Sb with the two different basis sets
+- analyze_reslts_14_1_11_DOS_Yb.py will compare the DOS for Yb with the two different basis sets
 - analyse_results_GaN.py will produce all plots and outputs for the GaN phases
 - analyse_results_NaCl.py will produce all plots and outputs for the NaCl phases
 - analyse_oxynitrides.py will produce all plots and outputs for the oxynitride systems
