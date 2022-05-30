@@ -35,8 +35,8 @@ To produce the data, you can use the scripts in "Start_Scripts".
 
 
 The following version numbers are needed for the workflows:
-- pymatgen 2022.2.1
-- atomate 1.0.3
+- [pymatgen 2022.2.1](https://pypi.org/project/pymatgen/2022.2.1/)
+- [atomate 1.0.3](https://github.com/hackingmaterials/atomate)
 - [enumlib 2.0.4](https://github.com/msg-byu/enumlib) (Installation with conda)
 
 
