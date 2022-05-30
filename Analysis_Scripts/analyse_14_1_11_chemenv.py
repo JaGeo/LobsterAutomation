@@ -17,8 +17,6 @@ from pymatgen.core.structure import Structure
 current_path = os.getcwd()
 directory_results = os.path.join(current_path, "../Results")
 
-# First folder contains spin-polarized computation, second one the one without.
-
 
 # First folder contains spin-polarized computation, second one the one without.
 for directory in [
