@@ -21,6 +21,3 @@ for spin in ["Spin_2", "Spin_mixed"]:
         el = Element("Sb")
         Plotter.add_dos_dict(complete_dos.get_element_spd_dos(el=el))
         Plotter.get_plot().show()
-
-# TODO: compare the two basis sets and make sure that the energetic order for Yb makes sense!
-
