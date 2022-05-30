@@ -25,7 +25,7 @@ You can then use the "Analysis_Scripts" to reproduce our publication.
 - `analyse_results_NaCl.py` will produce all plots and outputs for the NaCl phases
 - `analyse_oxynitrides.py` will produce all plots and outputs for the oxynitride systems
 
-In `Analysis_Scripts/Output`", you can find the outputs.
+In `Analysis_Scripts/Output`, you can find the outputs.
 
 
 To produce the data, you can use the scripts in "Start_Scripts". 
