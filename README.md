@@ -46,7 +46,7 @@ To analyze the results, you would need Lobsterpy 0.2.1 (which is compatible only
 
 
 # Computing times
-The reported computing times are for `Intel Xeon E7-4820 v4` CPU which has 128 GB RAM per node. We are reporting here the computing times for all the compounds with `ISPIN=2` presented in the paper (for the sake of brevity we have excluded oxynitrides and also calculations with `ISPIN=1`). Objective is just to provide an general overview of time required for performing the calculations and not to account here all the computing times of our calculations. 
+The reported computing times are for `Intel Xeon E7-4820 v4` CPU type (128 GB RAM per node). We are reporting here the computing times for all the compounds with `ISPIN=2` presented in the paper (for the sake of brevity we have excluded oxynitrides and calculations with `ISPIN=1`). Objective is just to provide an general overview of time required for performing the calculations and not to account here all the computing times of our calculations. 
 
 
 ## NaCl
