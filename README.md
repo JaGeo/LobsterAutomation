@@ -42,3 +42,38 @@ The following version numbers are needed for the workflows:
 
 To analyze the results, you would need Lobsterpy 0.2.1 (which is compatible only with a later version of pymatgen)
 - [LobsterPy](https://github.com/JaGeo/LobsterPy)
+
+
+
+# Computing times
+The reported computing times are for `Intel Xeon E7-4820 v4` CPU which has 128 GB RAM per node. We are reporting here the computing times for all the compounds with `ISPIN=2` presented in the paper (for the sake of brevity we have excluded oxynitrides and also calculations with `ISPIN=1`). Objective is just to provide an general overview of time required for performing the calculations and not to account here all the computing times of our calculations. 
+
+
+## NaCl
+| Material ID 	| Structure type 	|    Calc Type   	| Computing time (secs) 	| NCORES 	| NODES 	
+|-------------	|:--------------:	|:--------------:	|:---------------------:	|:------:	|:-----:	
+| mp-22851    	|      NaCl      	|      VASP      	|        704.975        	|   80   	|   2   	
+|             	|                	| lobster 	      |           38          	|   40   	|   1   	
+| mp-22862    	|      CsCl      	|      VASP      	|        798.869        	|   80   	|   2   	
+|             	|                	| lobster 	      |           30          	|   40   	|   1   	
+
+## GaN
+
+| Material ID 	| Structure type 	| Calc Type 	| Computing time (secs) 	| NCORES 	| NODES 	
+|-------------	|:--------------:	|:---------:	|:---------------------:	|:------:	|:-----:	
+| mp-804      	|    Wurtzite    	|    VASP   	|        2568.488       	|   80   	|   2   	
+|             	|                	|  lobster  	|          265          	|   40   	|   1   	
+| mp-830      	|   Zinc-blende  	|    VASP   	|        2646.004       	|   80   	|   2   	
+|             	|                	|  lobster  	|          211          	|   40   	|   1   	
+| mp-1007824  	|       BN       	|    VASP   	|        2491.302       	|   80   	|   2   	
+|             	|                	|  lobster  	|          200          	|   40   	|   1   	
+| mp-2853     	|      NaCl      	|    VASP   	|        2494.205       	|   80   	|   2   	
+|             	|                	|  lobster  	|          165          	|   40   	|   1   
+
+## Yb14MnSb11
+
+| Material ID 	| Structure type 	|    Calc Type   	| Computing time (secs) 	| NCORES 	| NODES 	
+|-------------	|:--------------:	|:--------------:	|:---------------------:	|:------:	|:-----:	
+| mp-568088   	|       --       	|      VASP      	|       19729.590       	|   80   	|   2   	
+|             	|                	| lobsterbasis_0 	|         10,215        	|   40   	|   1   	
+|             	|                	| lobsterbasis_1 	|         92,898        	|   40   	|   1   	
