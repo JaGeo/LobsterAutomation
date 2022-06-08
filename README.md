@@ -1,5 +1,5 @@
 ﻿# LobsterAutomation
-This is a package to reproduce the publication on Lobster automation: [1]J. George, G. Petretto, A. Naik, M. Esters, A. J. Jackson, R. Nelson, R. Dronskowski, G.-M. Rignanese, G. Hautier, **ChemPlusChem**, [https://doi.org/10.1002/cplu.202200123](https://doi.org/10.1002/cplu.202200123)
+This is a package to reproduce the publication on Lobster automation: J. George, G. Petretto, A. Naik, M. Esters, A. J. Jackson, R. Nelson, R. Dronskowski, G.-M. Rignanese, G. Hautier, **ChemPlusChem**, [https://doi.org/10.1002/cplu.202200123](https://doi.org/10.1002/cplu.202200123)
 
 `Start_Scripts` includes two scripts to start all Lobster computations with
 pymatgen, fireworks, and atomate.
