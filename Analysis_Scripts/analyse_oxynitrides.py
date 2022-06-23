@@ -14,9 +14,9 @@ correlation_dict = {}
 ordered_lists_ICOHP = {"Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []}, "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
                        "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []}}
 directories = [
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ba1Ta1O2N1",
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Sr1Ta1O2N1",
+    "../Results/Ca1Ta1O2N1",
+    "../Results/Ba1Ta1O2N1",
+    "../Results/Sr1Ta1O2N1",
 ]
 
 for dir in directories:
