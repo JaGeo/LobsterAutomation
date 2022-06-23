@@ -2,6 +2,7 @@ import os
 
 import numpy as np
 import pandas as pd
+from pathlib import Path
 from pymatgen.core.structure import Structure
 from pymatgen.io.lobster import Lobsterout
 from pymatgen.io.vasp.outputs import Vasprun
@@ -13,10 +14,13 @@ from lobsterpy.cohp.describe import Description
 correlation_dict = {}
 ordered_lists_ICOHP = {"Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []}, "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
                        "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []}}
+
+directory_results = Path(__file__).parent.parent / "Results"
+                       
 directories = [
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ca1Ta1O2N1",
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Ba1Ta1O2N1",
-    "/hpc-user/jgeorge/PycharmProjects/Scripts_for_Automation/LobsterAutomation/Results/Sr1Ta1O2N1",
+    os.path.join(directory_results,"Ca1Ta1O2N1"),
+    os.path.join(directory_results,"Ba1Ta1O2N1"),
+    os.path.join(directory_results,"Sr1Ta1O2N1")
 ]
 
 for dir in directories:
