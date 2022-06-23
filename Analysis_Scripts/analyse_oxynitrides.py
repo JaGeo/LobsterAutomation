@@ -12,15 +12,18 @@ from lobsterpy.cohp.analyze import Analysis
 from lobsterpy.cohp.describe import Description
 
 correlation_dict = {}
-ordered_lists_ICOHP = {"Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []}, "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
-                       "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []}}
+ordered_lists_ICOHP = {
+    "Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
+    "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
+    "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
+}
 
 directory_results = Path(__file__).parent.parent / "Results"
-                       
+
 directories = [
-    os.path.join(directory_results,"Ca1Ta1O2N1"),
-    os.path.join(directory_results,"Ba1Ta1O2N1"),
-    os.path.join(directory_results,"Sr1Ta1O2N1")
+    os.path.join(directory_results, "Ca1Ta1O2N1"),
+    os.path.join(directory_results, "Ba1Ta1O2N1"),
+    os.path.join(directory_results, "Sr1Ta1O2N1"),
 ]
 
 for dir in directories:
@@ -57,8 +60,8 @@ for dir in directories:
         symm_struct = sga.get_symmetrized_structure()
         vasprun = Vasprun(filename=os.path.join(dir, dir2, lobdir, "vasprun.xml.gz"))
         formula_units = (
-                structure.composition.num_atoms
-                / structure.composition.reduced_composition.num_atoms
+            structure.composition.num_atoms
+            / structure.composition.reduced_composition.num_atoms
         )
         energy = vasprun.final_energy / formula_units
 
@@ -186,8 +189,12 @@ for dir in directories:
     for k, d in df_NTa.groupby("total_energy"):
         for k1, d2 in df_OTa.groupby("total_energy"):
             if k == k1:
-                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-N"].append(float(d["ICOHP"]))
-                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-O"].append(float(d2["ICOHP"]))
+                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-N"].append(
+                    float(d["ICOHP"])
+                )
+                ordered_lists_ICOHP[str(dir.split("/")[-1])]["Ta-O"].append(
+                    float(d2["ICOHP"])
+                )
 
 import matplotlib as mpl
 
@@ -216,7 +223,8 @@ for key, values in ordered_lists_ICOHP.items():
     ax.plot(
         np.array(values["Ta-N"]),
         intercept + slope * np.array(values["Ta-N"]),
-        label=line, color=color
+        label=line,
+        color=color,
     )
 
 plt.xlabel("ICOHP N-Ta (eV)")
