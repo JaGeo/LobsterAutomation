@@ -13,10 +13,14 @@ from lobsterpy.cohp.describe import Description
 correlation_dict = {}
 ordered_lists_ICOHP = {"Ca1Ta1O2N1": {"Ta-O": [], "Ta-N": []}, "Ba1Ta1O2N1": {"Ta-O": [], "Ta-N": []},
                        "Sr1Ta1O2N1": {"Ta-O": [], "Ta-N": []}}
+
+current_path = os.getcwd()
+directory_results = os.path.join(current_path, "../Results")
+                       
 directories = [
-    "../Results/Ca1Ta1O2N1",
-    "../Results/Ba1Ta1O2N1",
-    "../Results/Sr1Ta1O2N1",
+    os.path.join(directory_results,"Ca1Ta1O2N1"),
+    os.path.join(directory_results,"Ba1Ta1O2N1"),
+    os.path.join(directory_results,"Sr1Ta1O2N1")
 ]
 
 for dir in directories:
